@@ -1,0 +1,40 @@
+.footer {
+	padding: var(--container-padding);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__logo {
+		font-family: "Pattaya", sans-serif;
+		font-size: 3rem;
+
+		&:hover {
+			cursor: default;
+		}
+	}
+
+	&__socials {
+		color: var(--primary-color);
+		font-size: 4rem;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		margin: 0;
+		width: 170px;
+		justify-content: space-between;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+
+		&:hover {
+			background-color: var(--basic-color);
+			color: var(--standard-color);
+			transition: all 0.2s;
+			transform: translateY(-2px);
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	}
+}

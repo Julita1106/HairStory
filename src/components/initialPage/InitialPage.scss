@@ -1,0 +1,12 @@
+.initial {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0;
+
+	&__heading {
+		color: var(--secondary-color);
+		font-size: 4rem;
+		font-weight: 100;
+	}
+}

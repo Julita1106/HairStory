@@ -1,0 +1,24 @@
+@import "./normalize.css";
+
+:root {
+	/*variables*/
+	--primary-color: #f8a5c2;
+	--secondary-color: #f78fb3;
+	--basic-color: #cf6a87;
+	--basic-color2: #ea8685;
+	--standard-color: #ffffff;
+	--text-color: #57606f;
+	--light-grey: rgb(231, 224, 224);
+
+	/*paddings*/
+	--container-padding: 2rem 3rem;
+
+	/*base styles*/
+	font-size: 10px;
+}
+
+body {
+	font-family: "Raleway", sans-serif;
+	background: url(./resources/images/main-background.jpg);
+	background-size: cover;
+}

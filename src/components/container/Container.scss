@@ -1,0 +1,6 @@
+.container {
+	min-height: calc(100vh - (110px + 80px));
+	display: flex;
+	flex-direction: column;
+	padding: var(--container-padding);
+}
