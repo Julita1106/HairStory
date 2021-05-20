@@ -3,6 +3,7 @@ import React from "react";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import PinterestIcon from "@material-ui/icons/Pinterest";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 import "./Footer.scss";
 
@@ -18,7 +19,10 @@ export const Footer = () => {
 					<InstagramIcon fontSize='inherit' />
 				</li>
 				<li className='footer__item'>
-					<PinterestIcon fontSize='inherit' />{" "}
+					<LinkedInIcon fontSize='inherit'></LinkedInIcon>
+				</li>
+				<li className='footer__item'>
+					<PinterestIcon fontSize='inherit' />
 				</li>
 			</ul>
 		</footer>
