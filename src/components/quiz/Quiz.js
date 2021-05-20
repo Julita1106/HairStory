@@ -141,13 +141,20 @@ export const Quiz = () => {
 				if (question.questionId === questionNumber) {
 					return <Question key={question.questionId} question={question} />;
 				}
+				return null;
 			})}
 
 			<div className='quiz__btns'>
-				<button onClick={goPrev} className='quiz__btn'>
+				<button
+					disabled={questionNumber < 2}
+					onClick={goPrev}
+					className='quiz__btn'>
 					<ArrowBackIcon fontSize='inherit' />
 				</button>
-				<button onClick={goNext} className='quiz__btn'>
+				<button
+					disabled={questionNumber >= questions.length}
+					onClick={goNext}
+					className='quiz__btn'>
 					<ArrowForwardIcon fontSize='inherit' />
 				</button>
 			</div>

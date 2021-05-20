@@ -27,7 +27,7 @@
 		font-style: italic;
 		font-size: 2rem;
 
-		&:hover {
+		&:hover:enabled {
 			background-color: var(--basic-color);
 			color: var(--standard-color);
 			transition: all 0.1s;
@@ -39,6 +39,11 @@
 			transition: all 0.1s;
 			transform: translateY(2px);
 			cursor: pointer;
+		}
+
+		&[disabled] {
+			background: #dcdde1;
+			cursor: not-allowed;
 		}
 	}
 }
