@@ -1,0 +1,74 @@
+.day {
+	background-color: rgba(255, 253, 253, 0.5);
+	max-width: 1200px;
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	margin: 10px;
+	border-radius: 5px;
+
+	h3 {
+		color: var(--secondary-color);
+		font-family: "Pattaya", sans-serif;
+		font-size: 4rem;
+		display: flex;
+		justify-content: center;
+		margin: 20px;
+	}
+
+	&__tasks {
+		font-size: 1.5rem;
+	}
+
+	li {
+		padding: 20px;
+		color: var(--text-color);
+		display: flex;
+		align-items: stretch;
+		position: relative;
+
+		label {
+			margin-left: 20px;
+		}
+	}
+
+	.checkbox-wrapper {
+		display: flex;
+		position: relative;
+
+		.checkmark {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 15px;
+			width: 15px;
+			background-color: var(--light-grey);
+			&:after {
+				content: "";
+				position: absolute;
+				display: none;
+			}
+		}
+
+		input {
+			position: absolute;
+			opacity: 0;
+			cursor: pointer;
+			height: 0;
+			width: 0;
+
+			&:checked ~ .checkmark:after {
+				display: block;
+				left: 4px;
+				top: 0px;
+				width: 5px;
+				height: 10px;
+				border: solid var(--primary-color);
+				border-width: 0 3px 3px 0;
+				-webkit-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				transform: rotate(45deg);
+			}
+		}
+	}
+}

@@ -1,0 +1,56 @@
+.plan {
+	display: flex;
+	flex-direction: column;
+
+	&__days {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		// flex-direction: column;
+		width: 100%;
+		margin: 30px auto;
+	}
+
+	&__actions {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__heading {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		h3 {
+			font-size: 4rem;
+			font-family: "Pattaya", sans-serif;
+			color: var(--text-color);
+		}
+	}
+}
+
+.btn {
+	background-color: rgba(255, 253, 253, 0.5);
+	font-family: "Relaway", sans-serif;
+	color: var(--text-color);
+	border-radius: 50%;
+	height: 80px;
+	width: 80px;
+	border: none;
+	font-style: italic;
+	font-size: 1.5rem;
+
+	&:hover {
+		background-color: var(--primary-color);
+		color: var(--standard-color);
+		transition: all 0.1s;
+		transform: translateY(-2px);
+		cursor: pointer;
+	}
+
+	&:active {
+		transition: all 0.1s;
+		transform: translateY(2px);
+		cursor: pointer;
+	}
+}
