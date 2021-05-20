@@ -1,0 +1,25 @@
+.question {
+	&__header {
+		font-family: "Pattaya", sans-serif;
+		font-size: 3rem;
+		margin-bottom: 20px;
+		color: var(--text-color);
+		display: flex;
+		padding: 30px 0;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	&__answers {
+		color: var(--text-color);
+		font-size: 2rem;
+	}
+
+	&__answer {
+		padding: 15px 0;
+
+		label {
+			margin-left: 10px;
+		}
+	}
+}

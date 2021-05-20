@@ -1,0 +1,44 @@
+.quiz {
+	border-radius: 3%;
+	padding: var(--container-padding);
+	margin-top: 87px;
+	background-color: white;
+	height: 400px;
+	width: 600px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	background: rgba(255, 253, 253, 0.5);
+
+	&__btns {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 20px;
+	}
+
+	&__btn {
+		background-color: var(--secondary-color);
+		font-family: "Relaway", sans-serif;
+		color: var(--text-color);
+		border-radius: 50%;
+		height: 50px;
+		width: 50px;
+		border: none;
+		font-style: italic;
+		font-size: 2rem;
+
+		&:hover {
+			background-color: var(--basic-color);
+			color: var(--standard-color);
+			transition: all 0.1s;
+			transform: translateY(-2px);
+			cursor: pointer;
+		}
+
+		&:active {
+			transition: all 0.1s;
+			transform: translateY(2px);
+			cursor: pointer;
+		}
+	}
+}
