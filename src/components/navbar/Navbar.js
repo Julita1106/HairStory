@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { GoogleLogin, GoogleLogout } from "react-google-login";
 
 import { history } from "common/utils";
@@ -26,10 +27,13 @@ export const Navbar = () => {
 
 	return (
 		<nav className='navbar'>
-			<p className='navbar__logo'>HairStory</p>
+			<Link to='/' className='navbar__logo'>
+				HairStory
+			</Link>
 			{context.isLogged === true ? (
 				<GoogleLogout
 					clientId={clientId}
+					isSignedIn={true}
 					render={(renderProps) => (
 						<CustomButton
 							onClick={renderProps.onClick}
