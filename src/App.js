@@ -7,6 +7,7 @@ import { Footer } from "./components/footer/Footer";
 import { Container } from "./components/container/Container";
 import { QuizPage } from "./components/quizPage/QuizPage";
 import { PlanPage } from "./components/planPage/PlanPage";
+import { QuizResults } from "./components/quiz/QuizResults";
 
 import { ContextProvider } from "common/context";
 
@@ -14,16 +15,17 @@ function App() {
 	return (
 		<>
 			<ContextProvider>
-				<Navbar />
-				<Container>
-					<Router history={history}>
+				<Router history={history}>
+					<Navbar />
+					<Container>
 						<Switch>
 							<Route path='/' exact component={InitialPage} />
 							<Route path='/:userId/quiz' component={QuizPage} />
 							<Route path='/:userId/plan' component={PlanPage} />
+							<Route path='/:userId/results' component={QuizResults} />
 						</Switch>
-					</Router>
-				</Container>
+					</Container>
+				</Router>
 				<Footer />
 			</ContextProvider>
 		</>
