@@ -1,13 +1,21 @@
 import React from "react";
 
 import { PlanDay } from "./PlanDay";
-import { plans } from "common/plans";
+import { Context } from "common/context";
+import { history } from "common/utils";
 
 import "./PlanPage.scss";
 
-const plan = plans.highpourous;
-
 export const PlanPage = () => {
+	const [context] = React.useContext(Context);
+
+	if (!context.isLogged) {
+		history.push("/");
+		return null;
+	}
+
+	const plan = context.weeklyPlans;
+
 	return (
 		<div className='plan'>
 			<div className='plan__heading'>
