@@ -11,9 +11,7 @@ export const QuizResults = () => {
 		return null;
 	}
 
-	const googleId = context.user.googleId;
-
-	const onShowPlan = () => history.push(`/${googleId}/plan`);
+	const onShowPlan = () => history.push(`/plan`);
 
 	const resultInfo = resultDictionary[context.hairType];
 

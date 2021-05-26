@@ -2,9 +2,6 @@ import { createBrowserHistory } from "history";
 
 export const history = createBrowserHistory();
 
-export const clientId =
-	"479237004423-ch80tkr3h0m0hpjhjn7gkkabkjha39rq.apps.googleusercontent.com";
-
 export const getQuizResult = (answers) => {
 	const aAnswers = answers.filter((answers) => answers.answerId === "a").length;
 	const bAnswers = answers.filter((answers) => answers.answerId === "b").length;

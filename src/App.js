@@ -14,20 +14,21 @@ import { ContextProvider } from "common/context";
 function App() {
 	return (
 		<>
-			<ContextProvider>
-				<Router history={history}>
+			<Router history={history}>
+				<ContextProvider>
 					<Navbar />
 					<Container>
 						<Switch>
 							<Route path='/' exact component={InitialPage} />
-							<Route path='/:userId/quiz' component={QuizPage} />
-							<Route path='/:userId/plan' component={PlanPage} />
-							<Route path='/:userId/results' component={QuizResults} />
+							<Route path='/quiz' component={QuizPage} />
+							<Route path='/plan' component={PlanPage} />
+							<Route path='/results' component={QuizResults} />
 						</Switch>
 					</Container>
-				</Router>
-				<Footer />
-			</ContextProvider>
+				</ContextProvider>
+			</Router>
+
+			<Footer />
 		</>
 	);
 }

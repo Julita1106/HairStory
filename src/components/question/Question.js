@@ -9,12 +9,12 @@ export const Question = ({ question, getAnswer }) => {
 	const onCheck = (e) => setValue(e.target.value);
 
 	React.useEffect(() => {
-		//kod wykona sie tylko wtedy gdy zmienimy wartosc (odpowiedz)
 		if (value) {
 			const currentAnswer = answers.find((answer) => answer.answerId === value);
 			getAnswer(currentAnswer);
 		}
 	}, [value]);
+	//kod wykona sie tylko wtedy gdy zmienimy wartosc (odpowiedz)
 
 	return (
 		<div className='question'>
