@@ -4,7 +4,6 @@ import { Question } from "components/question/Question";
 import { history, getQuizResult } from "common/utils";
 import { plans } from "common/plans";
 import { Context } from "common/context";
-import { submitPlan, submitPLan } from "common/api";
 
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
